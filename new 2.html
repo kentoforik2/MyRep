@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+	
+	<div id='demo'>
+		<p id='p1'>1st paragraph</p>
+		<p id='p2'>2nd paragraph</p>
+	</div>
+	
+	<script>
+	var p=document.createElement('p');
+	var node=document.createTextNode("This is new");
+	p.appendChild(node)
+	
+	var parent=document.getElementById('demo');
+	var child=document.getElementById ('p1');
+	parent.replaceChild(p, child);
+	
+	
+	</script>
+	
+	
+	
+	
+	<!--
+	<script>
+		var parent=document.getElementById('demo');				//parent = object 'demo' type
+		var child=document.getElementById('p1');				//child = object p1
+		parent.removeChild(child);								//removes child from parent
+	
+	</script>
+	-->
+	
+	
+	<!--
+	<div id='demo'>some content</div>
+	
+	<script type="text/javascript">
+		
+		var p=document.createElement('p');						//Создаём новый параграф объектом р.
+		var node=document.createTextNode ('Some new text');		//Создаём новый текстовый узел объектом node.
+		p.appendChild(node);									//Добавляем текст из node в параграф p.
+		var div=document.getElementById('demo');				//Создаём новый объект div со Значением элемента с ID 'demo'
+		div.appendChild(p);										//Добавляем к созданному объекту div, ранее созданный объект р
+	
+	</script>
+	-->
+	
+	
+		
+</body>
+
+</html>

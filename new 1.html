@@ -1,0 +1,223 @@
+<doctype html>
+
+<head>
+<title>1st JS Doc</title>
+</head>
+
+<body>
+	<script>
+	
+	var a= ['Wellcome ','2',' hell'];
+	alert(a);
+	
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+		
+	/*function my1()											//фУНКЦИЯ ЧАСЫ НА СТРАНИЧКЕ
+	{
+	var d=new Date();											//создали новый объект типа Date
+	var sec=d.getSeconds();										//Вытянули из него секунды
+	var min=d.getMinutes();										//Вытянули из него минуты
+	var hrs=d.getHours();										//Вытянули из него часы
+	document.body.innerHTML=hrs+":"+min+":"+sec;				//прописали их в виде текста на странице
+	};
+	setInterval(my1,1000);										//ежесекундно вызываем нашу функцию.
+	*/
+	
+	
+	/*
+	document.write (Date());									//Объект Date позволяет работать с датами.
+	var d= new Date(1);											//Если объекту Date() передаётся только 1 числовой параметр 
+	document.write (d);											//- это отсчёт в миллисекундах от 01.01.1970
+	*/
+	
+	
+	/*
+	function My1(){document.write ("hello \n\n")};				
+	setInterval (My1,1000);										//Типа таймера, который запускает указанную фукцию каждый указанный этап времени.
+	*/
+	
+	
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	/*
+	var person=[];												//объявили массив
+	person['name']='John';										//присвоили вместо индекса имя (создали ассоциативный массив),
+	person['age']=43;											//и таким образом, поскольку JS не поддерживает массивы с именованными индексами, 
+	alert (person['name']+' '+person['age']);					//наш массив стал объектомб к которому нельзя применять стандартные методы массивов.
+	*/
+	
+	/*
+	var c1=['HTML','CSS',3];
+	var c2=['JS','C++',5];
+	document.write (c1.concat(c2));								//Объединение массивов методом concat()
+	*/											
+	
+	
+	/*
+	var courses=new Array ('HTML','CSS','JS');					//Объявляем переменную типа массив и записываем в неё данные
+	var course=courses[0];										//Присваиваем переменой course значение первой ячейки массива courses
+	courses[1]='C++'											//Присваиваем переменой второй ячейке массива courses значение 
+	document.write (courses[1]+" "+course);
+	*/
+	
+	
+	/*
+	var courses=new Array (3);									//Другой вариант объявления массива с заданным количеством элементов в скобках.	
+	courses[0]='HTML';											//Непосредственое присвоение значений элементам массива, сделанное позже.
+	courses[1]='CSS';
+	courses[2]='JS';
+	*/
+	
+	
+	/*var courses=new Array ();									//А можно только объявить масив, а элементы добавлять потом столько, сколько нужно.
+	courses[0]='HTML';											
+	courses[1]='CSS';
+	courses[2]='JS';*/
+	
+	
+	/*
+	var courses=['HTML','CSS','JS',4,5];						//Самый простой и рекомендуемый способ, без функции-конструктора "new Array ()"
+	alert(courses.length);										//Возвращает число элементов массива.
+	*/															
+	
+	
+	
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	/*
+	function person (name, age)
+	{
+		this.name=name;
+		this.age=age;
+		this.yearOfBirth=bornYear;								//Присвоили функцию к свойству
+	};
+	
+	function bornYear ()										//Объявили функцию вне конструктора
+		{return 2018-this.age;};
+	
+	var p=new person ("Pavel", 33);								//Объявляем новый объект типа person
+	
+	
+	alert (p.yearOfBirth());									//Выводим (Вызываем метод yearOfBirth объекта p. типа person)
+	*/
+	
+		
+	
+	/*
+	function person (name, age)                         
+	{
+		this.name=name;
+		this.age=age;
+		this.changeName=function (name){this.name=name};		//Объявляем функцию в объекте (метод объекта)					
+	}
+	
+	NAME=prompt("Enter your name");
+	AGE=prompt("Enter your age");
+	
+	var p=new person (NAME, AGE);								//Объявляем новый объект типа person
+	
+	var NEWname=prompt ("NAME to change")					
+			
+	p.changeName(NEWname);										//Вызываем функцию changeName объекта p типа person c передачей ей параметра NEWname
+	
+	document.write (p.name, p.age);
+	*/
+	
+	
+		
+	/*
+	function person (name, age, color)
+		{
+		this.name=name;
+		this.age=age;
+		this.color=color;
+		};
+	
+	var p1=new person ("Kola", 18, "red");
+	var p2=new person ("Afas", 23, "green");
+	
+	document.write (p1.name);
+	document.write (p2.age);
+	*/
+	
+	
+	
+	
+	/*var person={name:"pavlo", age:33, color:"magenta", height:176};*/				//Объявляем переменную person типа массив и сразу заполняем её значениями
+		
+	/*person.name=prompt ("Enter your name");
+	alert ("Hello, "+person.name+"!!!");
+	alert ("Your name is "+person.name.length+" symbols length");*/
+	
+	
+	
+	/*var c=prompt("Enter you name, motherfucker");
+	alert ("HELLO,\nMotherfucker "+c);
+	var result=confirm("Don't play with me, motherfucker"+c);
+	switch (result)
+		{case true: {alert ("pussy")};break;
+		 case false: {alert ("real man")};break;
+		};*/
+		
+		
+	
+	/*function my1(a, b)
+	{return a*VAR};
+	alert (my1(10));*/
+	
+		
+	
+	/*function my1(a, b)
+	{
+		for (i=0;i<=VAR;i++)
+			{alert ("I fucked "+a+" "+i+b);};
+	}
+	my1("David"," times");
+	//some other code
+	my1("Mark", " times");*/
+	
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	/*do
+	{document.write (a+'<br>'); a++;if (a==9){break}; 
+	while (a<11);*/
+	
+	
+	
+	/*while (a<10)
+	{alert (a); a++}*/
+
+	
+		
+	
+	/*for (i=0, b=1;i<=10;i++)
+	 {
+	 if (i==3){continue;};
+	 document.write (b+i+'<br>');
+	 }*/
+	
+		
+	/*switch (a)
+		{
+		case 1:
+		alert ('A');
+		break;
+		
+		case 2:
+		alert ('B');
+		break;
+		
+		case 3:
+		alert ('C');
+		break;
+		} */
+		
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+	</script>
+
+</body>
